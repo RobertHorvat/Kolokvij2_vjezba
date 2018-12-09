@@ -19,7 +19,7 @@ namespace Kolokvij2_vjezba
 
         public override string ToString()
         {
-            return base.ToString()+": "+naziv+" Godine: "+godina.ToString();
+            return "Naziv: "+naziv+ " \nGodine: " + godina.ToString();
         }
 
     }

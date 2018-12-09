@@ -37,7 +37,7 @@ namespace Kolokvij2_vjezba
 
         public List<PjesmaNaAlbumu> VratiListuPjesama()
         {
-            return album.ToList();
+            return album;
             
         }
 

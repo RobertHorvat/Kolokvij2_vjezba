@@ -23,7 +23,7 @@ namespace Kolokvij2_vjezba
 
         public override string ToString()
         {
-            return RedniBrojPjesme.ToString()+ ". " + naziv+ "\n"+trajanje+ "\n"+izvodac;
+            return RedniBrojPjesme.ToString()+ ". " + naziv+ "\nTrajanje:"+trajanje.ToString()+ "sekundi\n"+izvodac + "\n";
         }
 
         public long VratiTrajanje()

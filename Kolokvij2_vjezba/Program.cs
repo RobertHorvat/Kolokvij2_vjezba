@@ -16,13 +16,16 @@ namespace Kolokvij2_vjezba
             a.DodajPjesmu(3, "Cija Si", 250);
             a.DodajPjesmu(4, "Ko Ti To Grize Obraze", 300);
 
-            Console.WriteLine(a.VratiListuPjesama());
-            Console.WriteLine(a.VratiNaziv());
-            Console.WriteLine(a.VratiZanr());
-            Console.WriteLine(a.vratiTrajanje());
+            foreach (PjesmaNaAlbumu p in a.VratiListuPjesama())
+                Console.WriteLine(p);
+
+            Console.WriteLine("Naziv albuma: {0}",a.VratiNaziv());
+            Console.WriteLine("Naziv Zanra: {0}",a.VratiZanr());
+            Console.WriteLine("Ukupno trajanje albuma: {0} sekundi",a.vratiTrajanje());
             a.ObrisiPjesmu(2);
 
-            Console.WriteLine(a.VratiListuPjesama());
+            foreach (PjesmaNaAlbumu p in a.VratiListuPjesama())
+                Console.WriteLine(p);
             Console.ReadKey();
         }
     }
